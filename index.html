@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Dom-Form</title>
+</head>
+
+<body>
+    <form id="mon formulaire">
+        
+    <div class="container">
+        <h1>Condidate informations:</h1>
+
+        <!-- First section -->
+        <div class="dv1">
+            <label>First name:</label>
+            <input type="text" name="firstname" id="firstName" class="input-box"><br>
+
+            <label>Last name:</label>
+            <input type="text" name="Last name" id="lastName" class="input-box"><br>
+
+            <label>Birthday:</label>
+            <input type="date" name="Birthday" id="Birthday" class="input-box"><br>
+
+            <label>Email adress:</label>
+            <input type="text" name="Email" id="email" class="input-box">
+        </div>
+        <!-- second section -->
+        <div class="dv2">
+            <label>Linkedin profile:</label>
+            <input type="text" name="Linkedin" id="linkedin" class="input-box"><br><br>
+
+            <label>Github profile:</label>
+            <input type="text" name="Github" id="github" class="input-box"><br><br>
+
+            <label>Years of experience:</label>
+            <input type="text" name="experience" id="experience" class="input-years"><br><br>
+        </div>
+
+        <!-- last section -->
+        <div class="dv3">
+            <fieldset>
+                <legend>Choose your Gender:</legend>
+                <select class="gender1" id="gender11" name="gender_1">
+                    <option value="male">M</option>
+                    <option value="female">F</option>
+                </select>
+            </fieldset>
+        </div>
+
+        <div class="dv4">
+            <textarea placeholder="Text me" cols="40" rows="10"></textarea><br>
+            
+            <label>Select an Image:</label>
+            <button>Select an Image</button>
+            <button id="btn" value="envoyer" onclick="afficher()">submit</button>
+        </div>
+
+    </div>
+
+    </form>
+    <!-- deuxieme partie "affichage de donnees" -->
+    <section>
+        <div class="circular-image">
+            <img src="ABDOU.jpg" alt="con">
+        </div>
+        <div class="container1">
+            <h2>Profile Details:</h2>
+            <p id="first">First Name:</p>
+            <p id="last">Last Name:</p>
+            <p id="birth">Birthday:</p>
+            <p id="email1">Email Adress:</p>
+            <p id="gender1">Your Gender:</p>
+            <p id="linkedin1">Linkedin Profile:</p>
+            <p id="github1">Github Profile:</p>
+
+
+        </div>
+    </section>
+        
+        
+        
+    
+
+  <script src="script.js"></script>
+</body>
+
+</html>
